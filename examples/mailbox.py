@@ -8,3 +8,5 @@ with MailBox() as mb:
     print('temperature:       {:.2f}'.format(float(mb.get_temperature(0)[1])/1000.0))
     print('max temperature:   {:.2f}'.format(float(mb.get_max_temperature(0)[1])/1000.0))
     print('throttled:         {:#x}'.format( int(mb.get_throttled() )))
+    print('pitch   {:d}'.format(int(mb.get_pitch())))
+    print(mb.get_physical_display_size())
